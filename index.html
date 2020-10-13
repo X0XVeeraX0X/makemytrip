@@ -3,8 +3,8 @@
   <head>
     <style>
     .div1{
-      background-color:blue;
-      width: 500px;
+      background-color:pink;
+      width: 400px;
       height: 250px;
       padding:50px;
       border: 5px solid black;
@@ -17,16 +17,16 @@
     }
     .topnav {
       overflow: hidden;
-      background-color: #333;
+      background-color: #231;
     }
 
     .topnav a {
-      float: left;
+      float: right;
       color: #f2f2f2;
-      text-align: center;
-      padding: 14px 100px;
+      text-align: right;
+      padding: 15px 100px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .topnav a:hover {
@@ -35,8 +35,8 @@
     }
 
     .topnav a.active {
-      background-color: blue;
-      color: black;
+      background-color: red;
+      color: blue;
     }
     </style>
     <meta charset="utf-8">
@@ -45,10 +45,10 @@
   </head>
   <body>
     <div ng-controller = 'eventController'>
-      <h1><center>ONLINE FLIGHT RESERVATION!!</center></h1><BR><BR>
+      <h1><center>ONLINE FLIGHT TICKET RESERVATION</center></h1><BR><BR>
       <div class="topnav">
-        <a  href="signup.html">Sign up</a>
         <a href="login.html">Log in</a>
+        <a  href="signup.html">Sign up</a>
         <a class="active" href="book.html">HOME</a>
         <a href="help.html">Help</a>
         
@@ -71,7 +71,21 @@
       <h4>Mouse Down: {{md}}</h4> -->
       <center>
       <div class="div1">
-      <h2>FROM</h2>
+      <h2>FROM:</h2>
+        <!--<input type="text" placeholder="Type your suggestions!">
+    <div ng-show="name =='VEERA'"> Welcome Admin </div>
+      <h4>Length of String Entered: {{kp1}}</h4>-->
+      
+      <center><textarea
+      
+      ng-keypress="kp2=kp2-1" cols="50">
+    </textarea></center>
+     <br>
+     <br><br><br>
+     
+     <center>
+      <div class="div2">
+      <h3>DESTINATION:</h3>
         <!--<input type="text" placeholder="Type your suggestions!">
     <div ng-show="name =='suntharamoorthy'"> Welcome Admin </div>
       <h4>Length of String Entered: {{kp1}}</h4>-->
@@ -84,29 +98,15 @@
      <br><br><br><br>
      
      <center>
-      <div class="div2">
-      <h3>TO</h3>
+      <div class="div1">
+      <h4>DEPARTURE DATE:</h4>
         <!--<input type="text" placeholder="Type your suggestions!">
-    <div ng-show="name =='suntharamoorthy'"> Welcome Admin </div>
+    <div ng-show="name =='VEERA'"> Welcome Admin </div>
       <h4>Length of String Entered: {{kp1}}</h4>-->
       
       <center><textarea
       
-      ng-keypress="kp2=kp2-1" cols="50">
-    </textarea></center>
-     <br>
-     <br><br><br><br>
-     
-     <center>
-      <div class="div2">
-      <h4>DEPARTURE DATE</h4>
-        <!--<input type="text" placeholder="Type your suggestions!">
-    <div ng-show="name =='suntharamoorthy'"> Welcome Admin </div>
-      <h4>Length of String Entered: {{kp1}}</h4>-->
-      
-      <center><textarea
-      
-      ng-keypress="kp2=kp2-1" cols="50">
+      ng-keypress="kp2=kp2-1" cols="25">
     </textarea></center>
      <br>
      <br><br><br><br>
